@@ -3,10 +3,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -26,10 +22,24 @@
 }
 
 header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 15%;
   width: 100%;
 }
 
+header button{
+  border: transparent;
+  font-size: 2rem;
+  background-color: transparent;
+  margin-top: .3rem;
+}
+
+header button:hover{
+  opacity: .6;
+  cursor: pointer;
+}
 footer{
   height: 15%;
   width: 100%;
@@ -52,4 +62,23 @@ main{
 .flex-centered{
   display: flex;
   align-items: center;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.dark-theme{
+  background-color: #242424;
+  color: white;
+}
+
+.light-theme{
+  background-color: white;
+  color: black;
+}
+
+.dark-theme i {
+  color: white;
 }
